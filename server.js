@@ -8,9 +8,9 @@ const url_beds    = `https://api.rootnet.in/covid19-in/hospitals/beds`;
 const url_contact = `https://api.rootnet.in/covid19-in/contacts`;
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Server listening on port ${port}!`));
 
 app.use(express.json({ limit: '20mb' }));
 app.set('view engine', 'ejs');
