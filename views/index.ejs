@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Covid-19</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+<!-- <h1>Covid-19</h1> -->
+    <body> 
+        <div class="container">
+           
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/views/img1.jpg">
+                </div>
+                <div class="content">
+                    <h2>Counts</h2>
+                    <p>
+                        <ul>
+                            <li> Total Number of cases : <%= data.counts.counts_data_total %></li>
+                            <li> Confirmed Cases Indian :<%= data.counts.counts_data_confirmedCasesIndian %></li>
+                            <li> Confirmed Cases Foreign : <%= data.counts.counts_data_confirmedCasesForeign %></li>
+                            <li> Discharged : <%= data.counts.counts_data_discharged %></li>
+                            <li> counts_data_deaths : <%= data.counts.counts_data_deaths %></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img2.jpg">
+                </div>
+                <div class="content">
+                    <h2>Test History</h2>
+                    <p>
+                        <ul>
+                            <li>Till date : <%= data.test.test_data_day %></li>
+                            <li>Total Samples Tested :<%= data.test.test_data_totalSamplesTested %></li>
+                            <li>Total Individuals Tested : <%= data.test.test_data_totalIndividualsTested %></li>
+                            <li>Total Positive Cases : <%= data.test.test_data_totalPositiveCases %></li>
+                        </ul>
+                        <a href="<%= data.test.counts_data_deaths %>">Read More</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/views/img3.jpg">
+                </div>
+                <div class="content">
+                    <h2>Beds & Hospitals</h2>
+                    <p>
+                        <ul>
+                            <li>No. of Rural Hospitals : <%= data.beds.beds_data_ruralHospitals %></li>
+                            <li>No. of Rural Beds : <%= data.beds.beds_data_ruralBeds %></li>
+                            <li>No. of Urban Hospitals :<%= data.beds.beds_data_urbanHospitals %></li>
+                            <li>No. of Urban Beds : <%= data.beds.beds_data_urbanBeds %></li>
+                            <li>Total No. of Hospitals : <%= data.beds.beds_data_totalHospitals %></li>
+                            <li>Total No. of Beds : <%= data.beds.beds_data_totalBeds %></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/views/img4.jpg">
+                </div>
+                <div class="content">
+                    <h2>contact</h2>
+                    <p>
+                        <ul>
+                            <li> contact : <%= data.contact.contact_data_number %></li>
+                        </ul>
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
