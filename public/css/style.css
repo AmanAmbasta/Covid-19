@@ -1,108 +1,145 @@
-body
-{
-	margin: 0;
-	padding: 0;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: consolas,sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
 }
-.container
-{
-	position: relative;
-	width: 1200px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+h1{
+  text-align: center;
+  margin-bottom: 30px;
 }
-.container .box
-{
-	position: relative;
-	width:	350px;
-	height: 400px;
-	
-	margin: 8px;
-	
-	box-sizing: border-box;
-	overflow: hidden;
+.container {
+  position: relative;
+  width: 1350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.container .box .imgBx
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	clip-path: circle(400px at center 100px);
-	transition: 0.3s;
-	transition-delay: 0.3s;
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 1px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-.container .box:hover .imgBx
-{
-	clip-path: circle(80px at center 100px);
-	transition-delay: 0s;
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(400px at center 100px);
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
-.container .box .imgBx img
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.container .box:hover .imgBx {
+  clip-path: circle(80px at center 100px);
+  transition-delay: 0s;
 }
-.container .box .content
-{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 55%;
-	padding: 10px;
-	box-sizing: border-box;
-	text-align: center;
+.container .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-p{
-	text-align: left;
+.container .box .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
 }
-.container .box .content h2
-{
-	margin: 0;
-	padding: 0;
+p {
+  text-align: left;
 }
-.container .box .content a
-{
-	text-decoration : none;
-	background: #000;
-	color: #fff;
-	padding: 0px;
-	display: inline-block;
+.container .box .content h2 {
+  margin: 0;
+  padding: 0;
+}
+.img1 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcToCMPeXVUeKfbPEQ28S3jveGL8WRW6meBi6YDP1JB_04uQBTa3&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.img2 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRU7CPBpspP3Zg38jgC5zckaayGZ_eAwbV1n45ZdIT3x73XnpsH&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.img3 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7EFAUfg8sepC2Nu3WA61wcymV26R9vLnvuSNmFIUFRl3zlx3u&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.img4 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYB2oXL1sXitpdeoFHOPTKNCfi-qyNJSFZFh6OwNmjv74whBI5&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.container .box .content a {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  padding: 0px;
+  display: inline-block;
 }
 .container .box .content h2,
 .container .box .content p,
-.container .box .content a
-{
-	opacity: 0;
-	transition: 0.5s;
-	transform: translateY(20px);
+.container .box .content a,
+.container .box .content ul {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20px);
 }
-.container .box:hover .content h2
-{
-	opacity: 1;
-	transform: translateY(0);
-	transition-delay: 0.5s
+.container .box:hover .content h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
-.container .box:hover .content p
-{
-	opacity: 1;
-	transform: translateY(0);
-	transition-delay: 0.7s
+.container .box:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
 }
-.container .box:hover .content a
-{
-	opacity: 1;
-	transform: translateY(0);
-	transition-delay: 0.9s
+.container .box:hover .content a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s;
+}
+.container .box:hover .content ul {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+footer {
+  
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
